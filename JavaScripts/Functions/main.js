@@ -90,25 +90,41 @@ console.log(now.toISOString());
 console.log(now.toLocaleString());
 console.log('=== ===')
 // TIMEOUTS
-setTimeout(() => {
-  console.log('Hello');
-}, 1000);
+// setTimeout(() => {
+//   console.log('Hello');
+// }, 1000);
 
 // INTERVALS
-function count() {
-  let count = 0;
-  for (let i = 5; i > 0; i--) {
-    count -= i;
-  }
-  return count;
-};
-const countDown = setInterval(() => {
-  console.log(count());
-}, 1000);
+// function count() {
+//   let count = 0;
+//   for (let i = 5; i > 0; i--) {
+//     count -= i;
+//   }
+//   return count;
+// };
+// const countDown = setInterval(() => {
+//   console.log(count());
+// }, 1000);
 
-// clear interval
+// // clear interval
+// setTimeout(() => {
+//   clearInterval(countDown);
+//   console.log('Stopped interval')
+// }, 5000);
+console.log('=== ===');
+
 setTimeout(() => {
-  clearInterval(countDown);
-  console.log('Stopped interval')
-}, 5000);
-console.log('=== ===')
+  console.log('Hello');
+  setTimeout(() => {
+    console.log('Hi');
+    setTimeout(() => {
+      console.log('Namaste');
+      setTimeout(() => {
+        console.log('Hola');
+        setTimeout(() => {
+          console.log('Bonjour');
+        })
+      }, 2000);
+    }, 2000);
+  }, 2000);
+}, 2000);
