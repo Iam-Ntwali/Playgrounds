@@ -1,0 +1,4 @@
+defender: manutd, liverpool
+attacker: arsenal, mancity, spurs
+midfielder: chelsea, everton
+goalkeeper: chelsea

@@ -1,0 +1,7 @@
+manutd: defender
+arsenal: attacker
+liverpool: defender
+mancity: attacker
+chelsea: midfielder, goalkeeper
+spurs: attacker
+everton: midfielder
