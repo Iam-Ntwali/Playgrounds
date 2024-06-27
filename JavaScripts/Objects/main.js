@@ -1,65 +1,65 @@
 // // Enhanced Object Literal
-// // const person = {
-// //   name: 'Ntwali',
-// //   age: 25,
-// //   hobbies: ['Sports', 'Cooking'],
-// //   address: {
-// //     city: 'Johannesburg',
-// //     country: 'South Africa',
-// //   },
-// //   getBirthYear: function () {
-// //     return 2021 - this.age;
-// //   }
-// // }
+const person1 = {
+  name: 'Ntwali',
+  age: 25,
+  hobbies: ['Sports', 'Cooking'],
+  address: {
+    city: 'Johannesburg',
+    country: 'South Africa',
+  },
+  getBirthYear: function () {
+    return 2021 - this.age;
+  }
+}
 
-// const user = (name, age, password, work) => {
-//   return {
-//     name,
-//     age,
-//     password,
-//     work,
-//     getBirthYear() {
-//       return 2024 - this.age;
-//     }
-//   }
-// };
+const user = (name, age, password, work) => {
+  return {
+    name,
+    age,
+    password,
+    work,
+    getBirthYear() {
+      return 2024 - this.age;
+    }
+  }
+};
 
-// const ntwali = user('Ntwali', 27, '@pass123', 'Enginner');
-// console.log(ntwali.getBirthYear());
-// console.log(ntwali);
+const ntwali = user('Ntwali', 27, '@pass123', 'Enginner');
+console.log(ntwali.getBirthYear());
+console.log(ntwali);
 
 
-// const lib = {
-//   sum: (a, b) => a + b,
-//   mult: (a, b) => a * b
-// };
+const lib = {
+  sum: (a, b) => a + b,
+  mult: (a, b) => a * b
+};
 
-// console.log(lib.sum(2, 3));
-// console.log(lib.mult(2, 3));
+console.log(lib.sum(2, 3));
+console.log(lib.mult(2, 3));
 
 //SPREAD OPERATOR used to make shallow copies of objects/
-// function placeholder(a, b, c) {
-//   console.log(a, b, c);
-// };
+function placeholder(a, b, c) {
+  console.log(a, b, c);
+};
 
-// const numbers = [1, 2, 3];
-// placeholder(...numbers);
+const numbers = [1, 2, 3];
+placeholder(...numbers);
 
-// const person = {
-//   name: 'Gentil',
-//   age: 25,
-//   gender: 'male',
-// }
-// console.log(person);
+const person = {
+  name: 'Gentil',
+  age: 25,
+  gender: 'male',
+}
+console.log(person);
 
 // const clonePerson = { ...person, work: 'Youtuber' }; // shallow copy of person object
-// console.log(clonePerson)
+console.log(clonePerson)
 // REST operator, Variadic functions
-// function userInfo(...personInfo) {
-//   console.log(typeof personInfo, personInfo);
-// };
+function userInfo(...personInfo) {
+  console.log(typeof personInfo, personInfo);
+};
 
-// userInfo('Ntwali', 25, 'Male', 'footall', 'coding');
+userInfo('Ntwali', 25, 'Male', 'footall', 'coding');
 
 
 // DESTRUCTURING --> unpack objects anrray into separate distinct variables
