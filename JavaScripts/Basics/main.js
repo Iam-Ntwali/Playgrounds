@@ -151,7 +151,12 @@ console.log(!c); // false
 console.log(!d); // true
 
 // TERNARY OPERATOR
+const legalAge = 25;
+const message = age >= 18 ? 'You are old enough' : 'You are not old enough';
+console.log(message);
 
+const today = 'Monday' ? 'Go to work' : 'Don\'t worry';
+console.log(today);
 
 // ARRAYS
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -190,3 +195,4 @@ person.hobbies.pop();
 person.address.street = 'KK 74 St';
 person.address.city = 'Kigali';
 console.log(person);
+
