@@ -128,3 +128,70 @@
 //   console.log(`at ${color} index, there is color ${colors[color]}`);
 // };
 
+// FOR-OF LOOP: (variabe of object)
+// remove duplicates in a string using for-of loop
+function removeDuplicates(str) {
+  let result = '';
+  for (let char of str) {
+    if (!result.includes(char)) {
+      result += char;
+    }
+  }
+  return result;
+}
+
+console.log(removeDuplicates('Hello, World!')); // "Helo, Wrld!"
+
+// remove duplicates in an array using for-of loop
+function removeDuplicatesArray(arr) {
+  let result = [];
+  for (let item of arr) {
+    if (!result.includes(item)) {
+      result.push(item);
+    }
+  }
+  return result;
+}
+let array = [1, 2, 3, 2, 4, 5, 6, 4, 3];
+console.log(removeDuplicatesArray([1, 2, 3, 2, 4, 5, 6, 4, 3])); // [1, 2, 3, 4, 5, 6]
+
+// remove duplicates in an array using Set
+function removeDuplicatesSet(arr) {
+  return [...new Set(arr)];
+}
+console.log(removeDuplicatesSet([1, 2, 3, 2, 4, 5, 6, 4, 3])); // [1, 2, 3, 4, 5, 6]
+
+// FOR EACH => perform a specifc action on each element of an array
+const numbers = [1, 2, 3, 4, 5];
+// sum the numbers
+let sumOfNmbrs = 0;
+numbers.forEach(function (number) {
+  sumOfNmbrs += number;
+});
+console.log(sumOfNmbrs);
+
+// MAP => create a new array with the results of calling a provided function on every element in the calling array
+const doubledNumbers = numbers.map(function (number) {
+  return number * 2;
+});
+console.log(doubledNumbers);
+
+// FILTER => create a new array with all elements that pass the test implemented by the provided function
+const evenNumbers = numbers.filter(function (number) {
+  return number % 2 === 0;
+});
+console.log(evenNumbers);
+
+// REDUCE => apply a function against an accumulator and each element in the array (from left to right) to reduce it to a single output value
+const sum = numbers.reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
+console.log(sum);
+
+// FIND => return the value of the first element in the provided array that satisfies the provided testing function
+const foundNumber = numbers.find(function (number) {
+  return number === 3;
+});
+console.log(foundNumber);
+
+// FIND INDEX => return the index of the first element in the provided array that satisfies the provided testing function
