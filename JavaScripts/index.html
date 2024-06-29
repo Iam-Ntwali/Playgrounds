@@ -8,28 +8,48 @@
   <style>
     body {
       background-color: rgba(0, 0, 0, 1);
-      background-clip: text;
-      color: transparent;
+      color: antiquewhite;
 
-      display: grid;
-      place-items: center;
+      font-family: Operator Mono;
+
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .container {
+      border: 5px solid crimson;
+      border-radius: 10px;
+      min-height: 80vh;
+      padding: 1rem;
     }
 
     h1 {
       background: linear-gradient(
         to right bottom,
-        rgba(245, 201, 4, 0.5),
-        rgba(215, 241, 99, 0.51)
+        rgba(245, 201, 4, 0.8),
+        rgba(215, 241, 99, 0.7)
       );
       background-clip: text;
       color: transparent;
-      font-size: 8rem;
+      font-size: 2rem;
       font-weight: 700;
-      font-family: Operator Mono;
+
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: antiquewhite;
     }
   </style>
   <body>
-    <h1>Javascript</h1>
+    <div class="container">
+      <h1>Javascript</h1>
+      <div class="container-text">
+        <h2>DOM</h2>
+      </div>
+    </div>
     <!-- Basics -->
     <!-- <script src="./Basics/main.js"></script> -->
     <!-- Functions -->
