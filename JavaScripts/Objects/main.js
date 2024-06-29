@@ -195,3 +195,9 @@ const foundNumber = numbers.find(function (number) {
 console.log(foundNumber);
 
 // FIND INDEX => return the index of the first element in the provided array that satisfies the provided testing function
+const foundIndex = numbers.findIndex(function (number) {
+  return number === 3;
+});
+console.log(foundIndex);
+
+// SORT => sort the elements of an array in place and return the array. The sort is not necessarily stable; that is, elements that compare equal do not necessarily appear in the same order.
