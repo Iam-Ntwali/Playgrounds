@@ -1,0 +1,51 @@
+body {
+  background-color: rgba(0, 0, 0, 1);
+  color: antiquewhite;
+
+  font-family: Operator Mono;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  border: 5px solid crimson;
+  border-radius: 10px;
+  min-height: 80vh;
+  padding: 1rem;
+}
+
+.title {
+  background: linear-gradient(to right bottom,
+      rgba(245, 201, 4, 0.8),
+      rgba(215, 241, 99, 0.7));
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.go-back {
+  background-color: crimson;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: antiquewhite;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: coral;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
