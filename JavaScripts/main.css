@@ -8,11 +8,18 @@ body {
   padding: 0px;
 }
 
+/* Main Page styles */
 .container {
+  max-width: 500px;
+  margin: 0 auto;
   border: 5px solid crimson;
   border-radius: 10px;
-  min-height: 80vh;
+  min-height: 50vh;
   padding: 1rem;
+}
+
+.contents-nav {
+  color: coral;
 }
 
 .title {
@@ -48,7 +55,7 @@ button {
 a {
   text-decoration: none;
   font-weight: 700;
-  color: black;
+  color: coral;
 }
 
 form {
