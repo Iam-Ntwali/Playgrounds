@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controlling Tweens</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <style>
+    .section-container {
+      flex-direction: column;
+    }
+
+    .buttons-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      gap: 1rem;
+    }
+
+    .start-button {
+      background-color: #2ecc71;
+    }
+
+    .pause-button {
+      background-color: #e74c3c;
+    }
+    .restart-button {
+      background-color: #f1c40f;
+    }
+  </style>
+  <body>
+    <section class="section-container">
+      <div class="box-container">
+        <div class="box"></div>
+      </div>
+
+      <div class="buttons-container">
+        <button class="start-button">Start ⏯️</button>
+        <button class="pause-button">Pause ⏸️</button>
+        <button class="restart-button">Restart ⏪</button>
+      </div>
+    </section>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- JS -->
+    <script src="./CtrlTweens.js"></script>
+  </body>
+</html>
