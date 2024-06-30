@@ -1,8 +1,8 @@
 body {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #1b1b1b;
   color: antiquewhite;
 
-  font-family: Operator Mono;
+  font-family: system-ui;
 
   margin: 0px;
   padding: 0px;
@@ -45,47 +45,30 @@ body {
 
 button {
   display: block;
-  margin: 0 auto;
   padding: 0.5rem 1rem;
   background-color: coral;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid transparent;
+
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: crimson;
 }
 
 a {
   text-decoration: none;
-  font-weight: 700;
-  color: coral;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+
+  transition: all 0.5s ease;
 }
 
-form {
-  max-width: 500px;
-  display: block;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: skyblue;
-  border-radius: 10px;
-  border: 1px solid transparent;
-
-  /* text-align: center; */
-}
-
-input {
-  display: inline-block;
-  text-align: left;
-  width: 50%;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  border: 1px solid transparent;
-}
-
-input:focus {
-  outline: none;
-  border: 1px solid crimson;
-}
-
-label {
-  display: block;
-  text-align: left;
-  font-size: 1.3rem;
+a:hover {
+  color: crimson;
 }
