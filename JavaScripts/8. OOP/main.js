@@ -121,3 +121,4 @@ console.log(hero1.greet());
 const mega1 = new Mega('Batman', 50, 'Money-making');
 console.log(mega1.greet()); // called only with inhereted properties
 console.log(mega1.superPower()); // called with overridden properties
+
