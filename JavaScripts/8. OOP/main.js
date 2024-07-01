@@ -48,14 +48,46 @@
 // console.log(user3.printThis()); // now it refers to the user3 object
 // console.log(user4.printThis()); // still refers to the user4 object
 
-// constructor function => act as blueprints for creating multiple instance of objects with the same structure and behaviours.
+// // constructor function => act as blueprints for creating multiple instance of objects with the same structure and behaviours.
 
-function Course(name, description, sections) {
-  this.name = name;
-  this.description = description;
-  this.sections = sections;
+// function Course(name, description, sections) {
+//   this.name = name;
+//   this.description = description;
+//   this.sections = sections;
+// }
+
+// const JavaScriotsBasics = new Course('JavaScript', 'This course will teach the best Job', 'Intro to JS Programming');
+
+// console.log(JavaScriotsBasics.name);
+
+const Admin = {
+  name: 'John Doe',
+  role: 'Admin',
+  isLoggedIn: true,
+  login() {
+    this.isLoggedIn = true;
+    console.log(`${this.name} has logged in.`);
+  },
+  logout() {
+    this.isLoggedIn = false;
+    console.log(`${this.name} has logged out.`);
+  }
 }
 
-const JavaScriotsBasics = new Course('JavaScript', 'This course will teach the best Job', 'Intro to JS Programming');
+Admin.login();
 
-console.log(JavaScriotsBasics.name);
+// Object.create method -> to create a prototype object
+const Manager = Object.create(Admin, {
+  name: { value: 'Smith' },
+  role: { value: 'Manager' },
+  department: { value: 'Sales' }
+});
+Manager.department = 'Marketing';
+
+Manager.viewDepartment = function () {
+  console.log(`${this.name} is a ${this.role} in the ${this.department} department.`);
+}
+
+Manager.viewDepartment();
+console.log(Manager);
+console.log(Admin)
