@@ -5,5 +5,5 @@ console.log(textIn);
 
 // Write file
 const textOut = `${textIn} Iadded this line here 🙂`;
-fs.writeFileSync('./txt/output.txt', textOut);
+fs.writeFileSync('./output.txt', textOut);
 console.log('File has been written');
