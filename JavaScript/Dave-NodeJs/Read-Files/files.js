@@ -14,12 +14,17 @@ console.log('Executed first');
 fs.writeFile(path.join(__dirname, 'txt', 'output.txt'), 'I am just being created now 🙂', (err) => {
   if (err) throw err;
   console.log('File has been created');
+  // Append to file
+  fs.appendFile(path.join(__dirname, 'txt', 'output.txt'), '\nThis is appended data inside the write callback 😉', (err) => {
+    if (err) throw err;
+    console.log('Data appended successfully');
+  });
+  // Rename file
+  fs.rename(path.join(__dirname, 'txt', 'output.txt'), path.join(__dirname, 'renamed.txt'), (err) => {
+    if (err) throw err;
+    console.log('File renamed successfully');
+  });
 });
 
-// // Append to file
-// fs.appendFile('./txt/output.txt', '\nThis is appended data', (err) => {
-//   if (err) throw err;
-//   console.log('Data appended successfully');
-// });
 
 // console.log('World');

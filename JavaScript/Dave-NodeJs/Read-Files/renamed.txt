@@ -1,0 +1,2 @@
+I am just being created now 🙂
+This is appended data inside the write callback 😉
